@@ -1,0 +1,39 @@
+- title: "Customer Segmentation Analysis"
+  description: "K-means clustering visualization of customer segments based on purchasing behavior"
+  image: "/assets/images/gallery/customer-segmentation.jpg"
+  tags: [clustering, visualization, business analytics]
+
+- title: "Time Series Forecasting"
+  description: "ARIMA model predictions for monthly sales data with confidence intervals"
+  image: "/assets/images/gallery/time-series.jpg"
+  tags: [forecasting, time series, statistics]
+
+- title: "Feature Importance Analysis"
+  description: "Random Forest feature importance plot showing key predictors"
+  image: "/assets/images/gallery/feature-importance.jpg"
+  tags: [machine learning, feature engineering, visualization]
+
+- title: "Geographic Data Visualization"
+  description: "Interactive map showing regional distribution of key metrics"
+  image: "/assets/images/gallery/geo-visualization.jpg"
+  tags: [geospatial, interactive, data visualization]
+
+- title: "Natural Language Processing Insights"
+  description: "Word cloud and sentiment analysis of customer reviews"
+  image: "/assets/images/gallery/nlp-analysis.jpg"
+  tags: [NLP, text analysis, sentiment analysis]
+
+- title: "A/B Test Results"
+  description: "Statistical comparison of control and treatment groups"
+  image: "/assets/images/gallery/ab-test.jpg"
+  tags: [statistics, experimentation, business analytics]
+
+- title: "Neural Network Architecture"
+  description: "Visualization of deep learning model architecture and training metrics"
+  image: "/assets/images/gallery/neural-network.jpg"
+  tags: [deep learning, neural networks, model architecture]
+
+- title: "Data Pipeline Dashboard"
+  description: "Real-time monitoring of data processing pipeline metrics"
+  image: "/assets/images/gallery/pipeline-dashboard.jpg"
+  tags: [data engineering, monitoring, dashboard] 
