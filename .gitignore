@@ -1,0 +1,50 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby dependencies
+.bundle/
+vendor/
+Gemfile.lock
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Personal data (if you want to keep these private)
+# Uncomment these if you want to keep your resume and profile photo private
+# assets/documents/resume.pdf
+# assets/images/profile/profile.jpg
+
+# Logs
+*.log
+logs/
+tmp/
+
+# Node modules (if you add any JavaScript dependencies later)
+node_modules/
+package-lock.json
+
+# Backup files
+*.bak
+*.backup
+*_backup 
