@@ -1,39 +1,19 @@
-- title: "Customer Segmentation Analysis"
-  description: "K-means clustering visualization of customer segments based on purchasing behavior"
-  image: "/assets/images/gallery/customer-segmentation.jpg"
-  tags: [clustering, visualization, business analytics]
+- title: "Book Recommendation System"
+  description: "A book recommendation system that uses collaborative filtering to recommend books to users based on their reading history and preferences."
+  image: "/assets/images/gallery/book-recommendation.jpg"
+  tags: [collaborative filtering, recommendation system, machine learning]
 
-- title: "Time Series Forecasting"
-  description: "ARIMA model predictions for monthly sales data with confidence intervals"
-  image: "/assets/images/gallery/time-series.jpg"
-  tags: [forecasting, time series, statistics]
+- title: "Containerized Churn Prediction Model Ready for Deployment"
+  description: "A Regression Model pipeline orchestrated by Airflow and containerized with Docker` used to predict customer churn. The model is deployed using FastAPI and can be scaled horizontally."
+  image: "/assets/images/gallery/churn-prediction.jpg"
+  tags: [MLOps, Docker, Airflow, FastAPI]
 
-- title: "Feature Importance Analysis"
-  description: "Random Forest feature importance plot showing key predictors"
-  image: "/assets/images/gallery/feature-importance.jpg"
-  tags: [machine learning, feature engineering, visualization]
+- title: "RAG System"
+  description: "A RAG system that uses a vector database to store and retrieve documents as well as route model calls to the appropriate model based on the user's query."
+  image: "/assets/images/gallery/rag-system.jpg"
+  tags: [RAG, LangChain, LLM]
 
-- title: "Geographic Data Visualization"
-  description: "Interactive map showing regional distribution of key metrics"
-  image: "/assets/images/gallery/geo-visualization.jpg"
-  tags: [geospatial, interactive, data visualization]
-
-- title: "Natural Language Processing Insights"
-  description: "Word cloud and sentiment analysis of customer reviews"
-  image: "/assets/images/gallery/nlp-analysis.jpg"
-  tags: [NLP, text analysis, sentiment analysis]
-
-- title: "A/B Test Results"
-  description: "Statistical comparison of control and treatment groups"
-  image: "/assets/images/gallery/ab-test.jpg"
-  tags: [statistics, experimentation, business analytics]
-
-- title: "Neural Network Architecture"
-  description: "Visualization of deep learning model architecture and training metrics"
-  image: "/assets/images/gallery/neural-network.jpg"
-  tags: [deep learning, neural networks, model architecture]
-
-- title: "Data Pipeline Dashboard"
-  description: "Real-time monitoring of data processing pipeline metrics"
-  image: "/assets/images/gallery/pipeline-dashboard.jpg"
-  tags: [data engineering, monitoring, dashboard] 
+- title: "CNN Air Jordan Classifier"
+  description: "A CNN model that uses a dataset of Air Jordan images to classify the model based on the image."
+  image: "/assets/images/gallery/air-jordan-classifier.jpg"
+  tags: [CNN, image classification, machine learning]
