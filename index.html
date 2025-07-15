@@ -1,311 +1,325 @@
----
-layout: default
-title: Home
----
-
-<div class="home">
-  <section class="hero">
-    <div class="hero-content">
-      <div class="profile-container">
-        <img src="{{ '/assets/images/profile/profile_2.jpg' | relative_url }}" alt="Your Name" class="profile-image">
-      </div>
-      <h1>Personal Portfolio</h1>
-      <p class="lead">Exploring data, building models, and sharing insights</p>
-    </div>
-  </section>
-
-  <section class="about-me">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Bonjour! I'm Venkat Vivek, an Industrial Engineering graduate from the University of Toronto born and raised in the charming capital city of Ontario, Canada with a passion for AI, ML and all things data! I wanted to showcase my skills and curiosities in a fun and interactive way through passion projects and written thought pieces.</p>
-          
-          <p>With over three years of experience in Machine Learning and Data Analytics, I've worked on Marketing Mixed Modelling (MMM), Retrieval-Augmented Generation (RAG), Customer Churn Prediction, Support Ticket Sentiment Analysis, and more! My current focus is on strengthening my foundational knowledge in deployment orchestration and productionizing models at scale on the cloud.</p>
-          
-          <p>When I'm not working with data, you can find me taking mental health walks, bird watching, reading psychological thrillers, watching sports, SNL and Survivor or volunteering at the Hands-On-Biodiversity exhibit at the ROM.</p>
-          
-          <div class="resume-download">
-            <a href="{{ '/assets/documents/VENKAT_VIVEK_MLE_RESUME.pdf' | relative_url }}" class="button" target="_blank">
-              <i class="fas fa-download"></i> Download Resume
-            </a>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkat Vivek - Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .nav-link {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #e5e7eb; /* Lighter gray on hover */
+            color: #1f2937; /* Darker text on hover */
+        }
+        .nav-link.active {
+            background-color: #1f2937; /* Dark background for active */
+            color: #ffffff; /* White text for active */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .sub-section-title {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #4f46e5; /* Indigo-600 */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .link-button:hover {
+            background-color: #4338ca; /* Indigo-700 */
+        }
+        .project-card {
+            background-color: #f9fafb; /* Lighter background for project cards */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-post-item {
+            background-color: #f9fafb;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .blog-post-item:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow-md py-4">
+        <div class="container flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900 mb-4 sm:mb-0 flex items-center">
+                <img src="assets/Passport_photo.png" alt="Venkat Vivek Profile Picture" class="w-10 h-15 rounded-full mr-5 object-cover">
+                Venkat Vivek
+            </h1>
+            <nav class="flex space-x-4">
+                <a id="nav-about" class="nav-link active" data-page="about">About Me</a>
+                <a id="nav-projects" class="nav-link" data-page="projects">Projects</a>
+                <a id="nav-blog" class="nav-link" data-page="blog">Personal Blog</a>
+            </nav>
         </div>
-        <div class="skills">
-          <h3>Skills & Tools</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Google Cloud Platform</span>
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Apache Airflow</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Cursor AI</span>
-            <span class="skill-tag">Langchain</span>
-            <span class="skill-tag">Databricks</span>
-            <span class="skill-tag">Kubernetes</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Jupyter</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Scikit-learn</span>
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">PySpark</span>
-            <!-- Add more skills as needed -->
-          </div>
+    </header>
+
+    <main id="content-area" class="flex-grow container py-8">
+        <!-- Content will be loaded here by JavaScript -->
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="container text-center text-sm">
+            &copy; 2025 Venkat Vivek. All rights reserved.
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="featured-projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      {% for project in site.projects limit:3 %}
-        <div class="project-card">
-          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-          <p>{{ project.description }}</p>
-          {% if project.image %}
-            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
-          {% endif %}
-          <div class="project-tags">
-            {% for tag in project.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <a href="/projects" class="button">View All Projects</a>
-  </section>
+    <script>
+        // Content for each page, defined as HTML strings
+        const pageContent = {
+            about: `
+                <div class="card mb-8">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="text-lg leading-relaxed mb-6">
+                        <p class="mb-4">Bonjour! Je m'appelle Venkat, an <strong>Industrial Engineer</strong> graduate from the <strong>University of Toronto</strong> born and raised in the charming capital city of Ontario, Canada with a passion for <strong>AI, ML</strong>, and all things <strong>data</strong>! This is a showcase of my skills and curiosities through engaging passion projects and insightful written thought pieces.</p>
+                        <p class="mb-4">With over <strong>three years</strong> of experience in Machine Learning and Data Analytics,  I've worked on Marketing Mix Modeling <strong>(MMM)</strong>, Retrieval-Augmented Generation <strong>(RAG)</strong>, customer <strong>churn prediction</strong>, support ticket <strong>sentiment analysis</strong> and more! My current focus is on strengthening my foundational knowledge in <strong>deployment orchestration</strong> and <strong>productionizing models at scale on the cloud</strong>.</p>
+                        <p>When i'm not working with data, you can find me taking mental health walks, bird watching, reading psychological thrillers, watching sports, SNL, and Survivor, or volunteering at the Hands-On-Biodiversity exhibit at the ROM.</p>
+                    </div>
 
-  <section class="latest-posts">
-    <h2>Latest Blog Posts</h2>
-    <div class="post-grid">
-      {% for post in site.posts limit:3 %}
-        <article class="post-card">
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        </article>
-      {% endfor %}
-    </div>
-    <a href="/blog" class="button">Read More Posts</a>
-  </section>
+                    <h3 class="sub-section-title">Skills</h3>
+                    <ul class="list-disc list-inside text-lg mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                        <li><strong>Programming Languages:</strong> Python, SQL, JavaScript, R, Excel VBA</li>
+                        <li><strong>Machine Learning:</strong> Supervised/Unsupervised Learning, Deep Learning (CNNs, Transformers), Time Series Analysis, Recommender Systems</li>
+                        <li><strong>Data Science Libraries:</strong> scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, SciPy, Matplotlib, Seaborn</li>
+                        <li><strong>NLP:</strong> spaCy, NLTK, Hugging Face Transformers, LangChain</li>
+                        <li><strong>MLOps:</strong> MLflow, Docker, K8s, CI/CD Practices</li>
+                        <li><strong>Data Engineering:</strong> ETL/ELT, Data Warehousing, Data Lakes, SQL Databases (PostgreSQL, MySQL), Apache Spark (PySpark)</li>
+                        <li><strong>Cloud Platforms:</strong> AWS, Google Cloud Platform (GCP), Azure</li>
+                        <li><strong>Tools & Platforms:</strong> Jupyter Notebooks, Git, GitHub, FastAPI, Streamlit, Tableau, Power BI</li>
+                    </ul>
 
-  <section class="visualization-gallery">
-    <h2>Visualization Gallery</h2>
-    <div class="gallery-grid">
-      <!-- Gallery items will be populated from _data/gallery.yml -->
-      {% for item in site.data.gallery %}
-        <div class="gallery-item">
-          <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
-          <div class="gallery-caption">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-</div>
+                    <h3 class="sub-section-title">Links</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="assets/Venkat_Vivek_Resume_.pdf" target="_blank" class="link-button">
+                            One Page CV
+                        </a>
+                        <a href="assets/Venkat_Vivek_Resume_.pdf" target="_blank" class="link-button">
+                            Full Resume
+                        </a>
+                        <a href="https://github.com/venkatvvv" target="_blank" class="link-button">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/venkat-vivekanandan" target="_blank" class="link-button">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            `,
+            projects: `
+                <div class="card mb-8">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="text-lg leading-relaxed mb-8 text-center">
+                        Here are some of the key data science and MLOps projects I've worked on. Each project demonstrates a unique set of skills and addresses real-world problems. Click on the titles to visit their respective GitHub repositories for detailed code, documentation, and insights.
+                    </p>
 
-<style>
-  /* Modern, clean styling */
-  .hero {
-    background: linear-gradient(135deg, #399060, #014518);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Project 1: MLOps Pipeline for Churn Prediction -->
+                        <div class="project-card">
+                            <h3 class="sub-section-title text-indigo-700">
+                                <a href="https://github.com/your-github-username/mlops-churn-prediction" target="_blank" class="hover:underline">
+                                    MLOps Pipeline for Churn Prediction Model
+                                </a>
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Built an end-to-end MLOps pipeline for a customer churn prediction model. This project focuses on automated data ingestion (Kaggle API), model training with MLflow tracking, versioning, and deployment via a FastAPI endpoint, demonstrating continuous integration and delivery practices for machine learning.
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                <strong>Tech Stack:</strong> Python, scikit-learn, XGBoost, MLflow, FastAPI, Docker, Kaggle API, Pandas, NumPy.
+                            </p>
+                        </div>
 
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+                        <!-- Project 2: Advanced Recommender System -->
+                        <div class="project-card">
+                            <h3 class="sub-section-title text-indigo-700">
+                                <a href="https://github.com/your-github-username/advanced-recommender-system" target="_blank" class="hover:underline">
+                                    Hybrid Movie/Product Recommender with Cold-Start Handling
+                                </a>
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Developed a hybrid recommender system combining collaborative filtering (SVD) and content-based methods to provide personalized movie/product recommendations. Implemented strategies to address the cold-start problem for new users and items, focusing on robust evaluation metrics like NDCG.
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                <strong>Tech Stack:</strong> Python, Surprise, scikit-learn, Pandas, NumPy, Cosine Similarity, Evaluation Metrics (Precision@k, NDCG).
+                            </p>
+                        </div>
 
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+                        <!-- Project 3: Deep Learning - Medical Image Analysis -->
+                        <div class="project-card">
+                            <h3 class="sub-section-title text-indigo-700">
+                                <a href="https://github.com/your-github-username/medical-image-analysis" target="_blank" class="hover:underline">
+                                    Medical Image Analysis: Disease Detection with Explainability
+                                </a>
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Applied Convolutional Neural Networks (CNNs) using transfer learning for disease detection from medical images (e.g., X-rays). A key focus was on model interpretability using techniques like Grad-CAM to visualize model decisions, crucial for trust in healthcare AI.
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                <strong>Tech Stack:</strong> Python, TensorFlow/PyTorch, Keras, OpenCV, scikit-image, Grad-CAM, Medical Imaging Datasets.
+                            </p>
+                        </div>
 
-  .lead {
-    font-size: 1.25rem;
-    opacity: 0.9;
-  }
+                        <!-- Project 4: NLP - Abstractive Summarization -->
+                        <div class="project-card">
+                            <h3 class="sub-section-title text-indigo-700">
+                                <a href="https://github.com/your-github-username/abstractive-summarization" target="_blank" class="hover:underline">
+                                    Abstractive Text Summarization with Fine-tuned Transformers
+                                </a>
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Developed an abstractive text summarization model capable of generating concise and coherent summaries of news articles. This project involved fine-tuning a pre-trained Transformer model (e.g., T5, BART) and evaluating performance using ROUGE metrics.
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                <strong>Tech Stack:</strong> Python, Hugging Face Transformers, PyTorch/TensorFlow, NLTK, ROUGE, Text Preprocessing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `,
+            blog: `
+                <div class="card mb-8">
+                    <h2 class="section-title">Personal Blog</h2>
+                    <p class="text-lg leading-relaxed mb-8 text-center">
+                        Welcome to my blog! Here, I share my thoughts, insights, and learnings on various topics in AI, Machine Learning, Data Science, and technology.
+                    </p>
 
-  section {
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
+                    <div class="space-y-6">
+                        <!-- Blog Post 1 -->
+                        <div class="blog-post-item">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <a href="#blog-post-1" class="hover:underline">
+                                    Understanding Data Drift in MLOps Pipelines
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-2">
+                                <span class="font-medium">Date:</span> June 15, 2025
+                            </p>
+                            <p class="text-gray-700">
+                                A deep dive into what data drift is, why it matters for deployed ML models, and practical strategies for detection and mitigation in production environments.
+                            </p>
+                            <a href="placeholder-for-blog-post-1.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Read More &rarr;</a>
+                        </div>
 
-  .project-grid, .post-grid, .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-  }
+                        <!-- Blog Post 2 -->
+                        <div class="blog-post-item">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <a href="#blog-post-2" class="hover:underline">
+                                    The Power of Prompt Engineering for Generative AI
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-2">
+                                <span class="font-medium">Date:</span> May 28, 2025
+                            </p>
+                            <p class="text-gray-700">
+                                Exploring the art and science of crafting effective prompts to unlock the full potential of large language models and other generative AI tools.
+                            </p>
+                            <a href="placeholder-for-blog-post-2.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Read More &rarr;</a>
+                        </div>
 
-  .project-card, .post-card, .gallery-item {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-    transition: transform 0.2s;
-  }
+                        <!-- Blog Post 3 -->
+                        <div class="blog-post-item">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                                <a href="#blog-post-3" class="hover:underline">
+                                    Demystifying Customer Churn Prediction: A Practical Guide
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-2">
+                                <span class="font-medium">Date:</span> April 10, 2025
+                            </p>
+                            <p class="text-gray-700">
+                                A step-by-step guide to building and evaluating a customer churn prediction model, from data preprocessing to model selection and interpretation.
+                            </p>
+                            <a href="placeholder-for-blog-post-3.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Read More &rarr;</a>
+                        </div>
 
-  .project-card:hover, .post-card:hover, .gallery-item:hover {
-    transform: translateY(-5px);
-  }
+                        <!-- Add more blog posts as needed -->
+                    </div>
+                </div>
+            `
+        };
 
-  .button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: #014518;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.2s;
-  }
+        const contentArea = document.getElementById('content-area');
+        const navLinks = document.querySelectorAll('.nav-link');
 
-  .button:hover {
-    background: #399060;
-  }
+        // Function to load content based on page ID
+        function loadPage(pageId) {
+            contentArea.innerHTML = pageContent[pageId];
 
-  .tag {
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    background: #e9ecef;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
+            // Update active navigation link
+            navLinks.forEach(link => {
+                if (link.dataset.page === pageId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
 
-  .gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
+            // Update URL hash for direct linking/refresh
+            history.pushState(null, '', `#${pageId}`);
+        }
 
-  .gallery-caption {
-    margin-top: 1rem;
-  }
+        // Add event listeners to navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                loadPage(event.target.dataset.page);
+            });
+        });
 
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-    
-    section {
-      padding: 1rem;
-    }
-  }
-
-  /* Profile Image Styles */
-  .profile-container {
-    margin-bottom: 2rem;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  /* About Me Section Styles */
-  .about-me {
-    background: white;
-    padding: 4rem 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .about-content {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    margin-top: 2rem;
-  }
-
-  .about-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-
-  .about-text p {
-    margin-bottom: 1.5rem;
-  }
-
-  .skills {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 8px;
-  }
-
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-
-  .skill-tag {
-    background: #e9ecef;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: #014518;
-  }
-
-  .resume-download {
-    margin-top: 2rem;
-  }
-
-  .resume-download .button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #10960e;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.2s;
-  }
-
-  .resume-download .button:hover {
-    background: #10960e;
-  }
-
-  @media (max-width: 768px) {
-    .about-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .profile-image {
-      width: 150px;
-      height: 150px;
-    }
-
-    .about-me {
-      padding: 2rem 1rem;
-    }
-  }
-</style>
-
-<!-- Add Font Awesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+        // Load initial page based on URL hash or default to 'about'
+        window.addEventListener('DOMContentLoaded', () => {
+            const initialPage = window.location.hash.substring(1) || 'about';
+            if (pageContent[initialPage]) {
+                loadPage(initialPage);
+            } else {
+                loadPage('about'); // Fallback to about if hash is invalid
+            }
+        });
+    </script>
+</body>
+</html>
