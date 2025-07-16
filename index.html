@@ -96,7 +96,7 @@
             <nav class="flex space-x-4">
                 <a id="nav-about" class="nav-link active" data-page="about">About Me</a>
                 <a id="nav-projects" class="nav-link" data-page="projects">Projects</a>
-                <a id="nav-blog" class="nav-link" data-page="blog">Personal Blog</a>
+                <a id="nav-blog" class="nav-link" data-page="blog">Blog</a>
             </nav>
         </div>
     </header>
@@ -107,7 +107,7 @@
 
     <footer class="bg-gray-800 text-white py-6 mt-auto">
         <div class="container text-center text-sm">
-            &copy; 2025 Venkat Vivek. All rights reserved.
+            &copy; 2025 Venkat Vivekanandan est. 2000. All rights reserved.
         </div>
     </footer>
 
@@ -119,21 +119,22 @@
                     <h2 class="section-title">About Me</h2>
                     <div class="text-lg leading-relaxed mb-6">
                         <p class="mb-4">Bonjour! Je m'appelle Venkat, an <strong>Industrial Engineer</strong> graduate from the <strong>University of Toronto</strong> born and raised in the charming capital city of Ontario, Canada with a passion for <strong>AI, ML</strong>, and all things <strong>data</strong>! This is a showcase of my skills and curiosities through engaging passion projects and insightful written thought pieces.</p>
-                        <p class="mb-4">With over <strong>three years</strong> of experience in Machine Learning and Data Analytics,  I've worked on Marketing Mix Modeling <strong>(MMM)</strong>, Retrieval-Augmented Generation <strong>(RAG)</strong>, customer <strong>churn prediction</strong>, support ticket <strong>sentiment analysis</strong> and more! My current focus is on strengthening my foundational knowledge in <strong>deployment orchestration</strong> and <strong>productionizing models at scale on the cloud</strong>.</p>
-                        <p>When i'm not working with data, you can find me taking mental health walks, bird watching, reading psychological thrillers, watching sports, SNL, and Survivor, or volunteering at the Hands-On-Biodiversity exhibit at the ROM.</p>
+                        <p class="mb-4">With over <strong>three years</strong> of experience in Machine Learning and Data Analytics,  I've worked on Marketing Mix Modeling <strong>(MMM)</strong>, Retrieval-Augmented Generation <strong>(RAG)</strong>, customer <strong>churn prediction</strong>, support ticket <strong>sentiment analysis</strong> and more! My current focus is on exploring the capabilities of <strong>LLMs</strong> and strengthening my foundational knowledge in <strong>deployment orchestration</strong> and <strong>productionizing models at scale on the cloud</strong>.</p>
+                        <p>When i'm not working with data, you can find me increasing my step count, bird watching, reading psychological thrillers, watching sports, SNL, and Survivor, or volunteering at the Hands-On-Biodiversity exhibit at the ROM.</p>
                     </div>
 
                     <h3 class="sub-section-title">Skills</h3>
                     <ul class="list-disc list-inside text-lg mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                         <li><strong>Programming Languages:</strong> Python, SQL, JavaScript, R, Excel VBA</li>
-                        <li><strong>Machine Learning:</strong> Supervised/Unsupervised Learning, Deep Learning (CNNs, Transformers), Time Series Analysis, Recommender Systems</li>
-                        <li><strong>Data Science Libraries:</strong> scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, SciPy, Matplotlib, Seaborn</li>
+                        <li><strong>Data Science Libraries:</strong> scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, SciPy, JAX, Spark MLlib</li>
                         <li><strong>NLP:</strong> spaCy, NLTK, Hugging Face Transformers, LangChain</li>
-                        <li><strong>MLOps:</strong> MLflow, Docker, K8s, CI/CD Practices</li>
-                        <li><strong>Data Engineering:</strong> ETL/ELT, Data Warehousing, Data Lakes, SQL Databases (PostgreSQL, MySQL), Apache Spark (PySpark)</li>
-                        <li><strong>Cloud Platforms:</strong> AWS, Google Cloud Platform (GCP), Azure</li>
-                        <li><strong>Tools & Platforms:</strong> Jupyter Notebooks, Git, GitHub, FastAPI, Streamlit, Tableau, Power BI</li>
-                    </ul>
+                        <li><strong>MLOps:</strong> Apache Airflow, MLflow, Docker, K8s, Terraform</li> 
+                        <li><strong>Web Application Frameworks:</strong> Flask, FastAPI, Node.js
+                        <li><strong>Data Engineering:</strong> PostgreSQL, Apache Spark, Redis, dbt, Databricks</li>
+                        <li><strong>Cloud Platforms:</strong> AWS, Google Cloud Platform (GCP), Azure</li> 
+                        <li><strong>Data Visualization:</strong> Matplotlib, seaborn, Looker, Redash, Tableau, Power BI</li>
+                        <li><strong>Spoken Languages:</strong> English, Fran&ccedil;ais</li>
+                   </ul>
 
                     <h3 class="sub-section-title">Links</h3>
                     <div class="flex flex-wrap gap-4">
@@ -156,67 +157,34 @@
                 <div class="card mb-8">
                     <h2 class="section-title">My Projects</h2>
                     <p class="text-lg leading-relaxed mb-8 text-center">
-                        Here are some of the key data science and MLOps projects I've worked on. Each project demonstrates a unique set of skills and addresses real-world problems. Click on the titles to visit their respective GitHub repositories for detailed code, documentation, and insights.
+                        Here are some of the projects I've worked on. Each demonstrate a unique set of skills and addresses real-world problems. Click on the titles to visit their respective GitHub repositories for detailed code, documentation, and insights.
                     </p>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Project 1: MLOps Pipeline for Churn Prediction -->
+                        <!-- Project 1: Two-Way Reading Recommendation System: Collaborative Filtering and Semantic Search -->
                         <div class="project-card">
                             <h3 class="sub-section-title text-indigo-700">
-                                <a href="https://github.com/your-github-username/mlops-churn-prediction" target="_blank" class="hover:underline">
-                                    MLOps Pipeline for Churn Prediction Model
+                                <a href="https://github.com/VenkatVVV/reading-recommender" target="_blank" class="hover:underline">
+                                    Two-Way Reading Recommendation System: Collaborative Filtering and Semantic Search
                                 </a>
                             </h3>
                             <p class="text-gray-700 mb-3">
-                                Built an end-to-end MLOps pipeline for a customer churn prediction model. This project focuses on automated data ingestion (Kaggle API), model training with MLflow tracking, versioning, and deployment via a FastAPI endpoint, demonstrating continuous integration and delivery practices for machine learning.
-                            </p>
-                            <p class="text-sm text-gray-500">
-                                <strong>Tech Stack:</strong> Python, scikit-learn, XGBoost, MLflow, FastAPI, Docker, Kaggle API, Pandas, NumPy.
+                                Showcasing an advanced multi-faceted recommendation system, this project integrates TensorFlow-driven collaborative filtering with LangChain and Gemini Vector Embeddings for semantic content-based recommendations. It also incorporates Hugging Face sentiment analysis for deeper insights. The entire solution is production-ready, featuring a FastAPI inference layer, Docker containerization, and scalable orchestration on Google Kubernetes Engine (GKE).                            <p class="text-sm text-gray-500">
+                                <strong>Tech Stack:</strong> Python, TensorFlow, LangChain, Google Gemini Vector Embeddings, Hugging Face, FastAPI, Docker, Google Kubernetes Engine (GKE)
                             </p>
                         </div>
 
-                        <!-- Project 2: Advanced Recommender System -->
+                        <!-- Project 2: RAG Model Dispatch System -->
                         <div class="project-card">
                             <h3 class="sub-section-title text-indigo-700">
-                                <a href="https://github.com/your-github-username/advanced-recommender-system" target="_blank" class="hover:underline">
-                                    Hybrid Movie/Product Recommender with Cold-Start Handling
+                                <a href="https://github.com/VenkatVVV/rag-model-dispatch-system" target="_blank" class="hover:underline">
+                                    RAG Model Dispatch System for fraud detection, customer segmentation, risk scoring and general inquiries
                                 </a>
                             </h3>
                             <p class="text-gray-700 mb-3">
-                                Developed a hybrid recommender system combining collaborative filtering (SVD) and content-based methods to provide personalized movie/product recommendations. Implemented strategies to address the cold-start problem for new users and items, focusing on robust evaluation metrics like NDCG.
-                            </p>
+                                Developed a Retrieval Augmented Generation (RAG) system designed for intelligent query routing within a Databricks environment. This central dispatcher analyzes user intent to either execute specialized PySpark ML models (e.g., Fraud Detection, Credit Risk, Customer Segmentation) or delegate to a Gemini LLM for broader inquiries. The solution leverages Databricks, Spark MLlib, and the Gemini API for robust, intent-driven responses.                            </p>
                             <p class="text-sm text-gray-500">
-                                <strong>Tech Stack:</strong> Python, Surprise, scikit-learn, Pandas, NumPy, Cosine Similarity, Evaluation Metrics (Precision@k, NDCG).
-                            </p>
-                        </div>
-
-                        <!-- Project 3: Deep Learning - Medical Image Analysis -->
-                        <div class="project-card">
-                            <h3 class="sub-section-title text-indigo-700">
-                                <a href="https://github.com/your-github-username/medical-image-analysis" target="_blank" class="hover:underline">
-                                    Medical Image Analysis: Disease Detection with Explainability
-                                </a>
-                            </h3>
-                            <p class="text-gray-700 mb-3">
-                                Applied Convolutional Neural Networks (CNNs) using transfer learning for disease detection from medical images (e.g., X-rays). A key focus was on model interpretability using techniques like Grad-CAM to visualize model decisions, crucial for trust in healthcare AI.
-                            </p>
-                            <p class="text-sm text-gray-500">
-                                <strong>Tech Stack:</strong> Python, TensorFlow/PyTorch, Keras, OpenCV, scikit-image, Grad-CAM, Medical Imaging Datasets.
-                            </p>
-                        </div>
-
-                        <!-- Project 4: NLP - Abstractive Summarization -->
-                        <div class="project-card">
-                            <h3 class="sub-section-title text-indigo-700">
-                                <a href="https://github.com/your-github-username/abstractive-summarization" target="_blank" class="hover:underline">
-                                    Abstractive Text Summarization with Fine-tuned Transformers
-                                </a>
-                            </h3>
-                            <p class="text-gray-700 mb-3">
-                                Developed an abstractive text summarization model capable of generating concise and coherent summaries of news articles. This project involved fine-tuning a pre-trained Transformer model (e.g., T5, BART) and evaluating performance using ROUGE metrics.
-                            </p>
-                            <p class="text-sm text-gray-500">
-                                <strong>Tech Stack:</strong> Python, Hugging Face Transformers, PyTorch/TensorFlow, NLTK, ROUGE, Text Preprocessing.
+                                <strong>Tech Stack:</strong> Databricks, Apache Spark (PySpark), Spark MLlib, Python, Google Gemini API
                             </p>
                         </div>
                     </div>
@@ -224,7 +192,7 @@
             `,
             blog: `
                 <div class="card mb-8">
-                    <h2 class="section-title">Personal Blog</h2>
+                    <h2 class="section-title">Professional Blog</h2>
                     <p class="text-lg leading-relaxed mb-8 text-center">
                         Welcome to my blog! Here, I share my thoughts, insights, and learnings on various topics in AI, Machine Learning, Data Science, and technology.
                     </p>
@@ -234,14 +202,14 @@
                         <div class="blog-post-item">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
                                 <a href="#blog-post-1" class="hover:underline">
-                                    Understanding Data Drift in MLOps Pipelines
+                                    What is CI/CD and why is it so important for machine learning?   
                                 </a>
                             </h3>
                             <p class="text-gray-600 text-sm mb-2">
-                                <span class="font-medium">Date:</span> June 15, 2025
+                                <span class="font-medium">Date:</span> July 16, 2025
                             </p>
                             <p class="text-gray-700">
-                                A deep dive into what data drift is, why it matters for deployed ML models, and practical strategies for detection and mitigation in production environments.
+                                An overview on continuous integration / continuous development practices and it's significance with end-to-end machine learning pipelines. 
                             </p>
                             <a href="placeholder-for-blog-post-1.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Read More &rarr;</a>
                         </div>
@@ -250,14 +218,14 @@
                         <div class="blog-post-item">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
                                 <a href="#blog-post-2" class="hover:underline">
-                                    The Power of Prompt Engineering for Generative AI
+                                    Why MLOps is a necessary skill for all Data Scientists
                                 </a>
                             </h3>
                             <p class="text-gray-600 text-sm mb-2">
-                                <span class="font-medium">Date:</span> May 28, 2025
+                                <span class="font-medium">Date:</span> July 15, 2025
                             </p>
                             <p class="text-gray-700">
-                                Exploring the art and science of crafting effective prompts to unlock the full potential of large language models and other generative AI tools.
+                                Understanding the trajectory of a Data professional and how it eventually leads to MLOps, deployments, containerization and production.
                             </p>
                             <a href="placeholder-for-blog-post-2.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Read More &rarr;</a>
                         </div>
@@ -266,14 +234,14 @@
                         <div class="blog-post-item">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">
                                 <a href="#blog-post-3" class="hover:underline">
-                                    Demystifying Customer Churn Prediction: A Practical Guide
+                                    How to embrace uncertainty
                                 </a>
                             </h3>
                             <p class="text-gray-600 text-sm mb-2">
-                                <span class="font-medium">Date:</span> April 10, 2025
+                                <span class="font-medium">Date:</span> July 14, 2025
                             </p>
                             <p class="text-gray-700">
-                                A step-by-step guide to building and evaluating a customer churn prediction model, from data preprocessing to model selection and interpretation.
+                                An anecdotal thought piece on how to stay motivated while job hunting and continue to pursue learning wherever applicable and lastly, to never lose hope!
                             </p>
                             <a href="placeholder-for-blog-post-3.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Read More &rarr;</a>
                         </div>
